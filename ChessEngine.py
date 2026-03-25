@@ -99,26 +99,6 @@ class GameState:
             moves = self.getAllPossibleMoves()    
 
         return moves
-                    
-    '''
-    
-    def inCheck(self):
-        if self.whiteToMove:
-            return self.squareUnderAttack(self.whiteKingLocation[0], self.whiteKingLocation[1])
-        else:
-            return self.squareUnderAttack(self.blackKingLocation[0], self.blackKingLocation[1])
-       
-        #determine if the current player is in check
-
-    def squareUnderAttack(self, r, c):
-        self.whiteToMove = not self.whiteToMove #switch to opponent's turn
-        oppMoves = self.getAllPossibleMoves()
-        for move in oppMoves:
-            if move.endRow == r and move.endCol == c: #square is under attack
-                self.whiteToMove = not self.whiteToMove #switch turns back
-                return True
-            return False
-    '''
 
     #All moves without considering checks
     def getAllPossibleMoves(self):
