@@ -1,0 +1,21 @@
+{
+  "conditions": {
+    "max_depth": 4,
+    "time_limit_seconds": null,
+    "notes": "Custom engine before P5 search features; fresh engine per position. Fixed depth avoids time-budget variance."
+  },
+  "feature_configuration": {
+    "pvs": false,
+    "aspiration_windows": false,
+    "lmr": false,
+    "null_move_pruning": false,
+    "futility_pruning": false,
+    "opening_book": false
+  },
+  "positions": {
+    "opening": {"nodes": 3598, "nps": 5237.3, "depth": 4, "elapsed_seconds": 0.6870, "score": 0, "best_move": "g1f3"},
+    "middlegame": {"nodes": 10622, "nps": 4720.9, "depth": 4, "elapsed_seconds": 2.2500, "score": 235, "best_move": "d4c5"},
+    "tactical": {"nodes": 2035, "nps": 9975.5, "depth": 4, "elapsed_seconds": 0.2040, "score": 29999, "best_move": "g6g7"},
+    "endgame": {"nodes": 697, "nps": 11241.9, "depth": 4, "elapsed_seconds": 0.0620, "score": 37, "best_move": "d4d5"}
+  }
+}

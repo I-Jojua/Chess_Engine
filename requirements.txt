@@ -1,0 +1,2 @@
+python-chess>=1.999,<2.0
+pygame>=2.6,<3.0
